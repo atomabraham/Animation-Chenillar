@@ -1,0 +1,36 @@
+.slide-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    animation: chenillard 2s linear infinite;
+}
+
+.slider-item {
+    /* flex: 0 0 100%; */
+}
+
+.slider-item img {
+    /* width: 100vw; */
+    height: 50vh;
+}
+
+@keyframes chenillard {
+    0% {
+        /* Début de la translation à partir de 0 */
+        transform: translateX(0);
+    }
+
+    100% {
+        /* Translation vers la gauche */
+        transform: translateX(-100%);
+    }
+}
+
+.slide-container p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
